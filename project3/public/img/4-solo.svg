@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.7220458984375 471.7860303696755" width="492.7220458984375" height="471.7860303696755" filter="invert(93%) hue-rotate(180deg)">
+  <!-- svg-source:excalidraw -->
+  
+  <defs>
+    <style>
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://excalidraw.com/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://excalidraw.com/Cascadia.woff2");
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="492.7220458984375" height="471.7860303696755" fill="#ffffff"></rect><g transform="translate(139.0484619140625 10) rotate(0 110.5 216.5)"><text x="0" y="304" font-family="Virgil, Segoe UI Emoji" font-size="342.1737670898438px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">4</text></g><g transform="translate(10 416.6714782714844) rotate(0 236.36102294921875 22.55727604909555)"><text x="0" y="31.114552098191083" font-family="Virgil, Segoe UI Emoji" font-size="35.30704077249736px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Lorem ipsum dolor sit amet</text></g></svg>

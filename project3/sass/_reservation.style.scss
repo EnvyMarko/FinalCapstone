@@ -1,0 +1,154 @@
+#rent {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: $max;
+        height: 50px;
+    }
+    
+
+    .heading_container {
+        color: white;
+    }
+
+    .rent-row-1,
+    .rent-row-2 {
+        display: flex;
+        justify-content: center;
+        margin: 5vh 0;
+        
+        .rent-choice {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+            color: white;
+            padding: $p-1;
+            flex-basis: 50%;
+            // height: 300px;
+            border: 1px solid $color1;
+            img {
+                width: 100%;
+                height: auto;
+            }
+            border-radius: 7px;
+        }
+
+        .filler {
+            width: 30%;
+        }
+
+    }
+
+    // .rent-row-1 {
+    //     margin-top: 5vh;
+    // }
+
+    // .rent-row-2 {
+    //     margin-bottom: 5vh;
+    // }
+}
+
+.mapouter {
+    
+    justify-content: center;
+    // border: 5px solid $color1;
+    position:relative;text-align:right;
+    width: 98.9vw;
+    margin: 0 0 150px 0;
+
+    .gmap_canvas {
+        // border: 5px solid white;
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:100%;
+    }
+
+    #gmap_canvas {
+        border-radius: 15px;
+    }
+}
+
+.pricingCsection {
+    position: relative;
+    // padding: $p-2;
+
+    .bgbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        // background-image: url("../public/mustang.jpg");
+        // background-color: #0009; background-blend-mode: darken;
+        // background-repeat: no-repeat;
+      
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+      }
+
+    .heading_container {
+        color: white;
+    }
+  
+    .box {
+        background: white;
+        text-align: center;
+        padding: 25px;
+        border-radius: 15px;
+        margin-top: 75px;
+        position: relative;
+        overflow: hidden;
+  
+        * {
+            position: relative;
+            z-index: 1;
+        }
+    
+        &::before {
+            content: "";
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            background: orange;
+            border-radius: 100%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 65px;
+        }
+    
+        a {
+            color: darkorange;
+        }
+    
+        &.boxcenter {
+            margin-top: 45px;
+        }
+    }
+}

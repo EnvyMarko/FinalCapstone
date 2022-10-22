@@ -1,0 +1,157 @@
+.client_section {
+  color: white;
+
+  .heading_container {
+    margin-bottom: 25px;
+  }
+
+  .as {
+    display: flex;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+
+    .detail-box {
+      margin-bottom: 15px;
+      position: relative;
+
+      p {
+        position: relative;
+        z-index: 1;
+      }
+
+      &::before,
+      &::after {
+        font-family: FontAwesome;
+        display: inline-block;
+        padding-right: 6px;
+        vertical-align: middle;
+        position: absolute;
+        font-size: 68px;
+        color: #2f2d2d;
+      }
+
+      &::before {
+        content: "\f10d";
+        top: -25px;
+        left: -10px;
+      }
+
+      &::after {
+        content: "\f10e";
+        bottom: -25px;
+        right: 0;
+      }
+    }
+
+    .client_id {
+      display: flex;
+      align-items: center;
+
+      .img-box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+
+        img {
+          width: 100%;
+          border-radius: 100%;
+          border: 5px solid orange;
+        }
+
+      }
+
+      .name {
+        margin-left: 15px;
+
+        h6 {
+          color: #bf8328;
+          font-size: 18px;
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+
+  .carousel-control-prev,
+  .carousel-control-next{
+    margin-top: 30px;
+    width: 2%;
+    top: 100%;
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: orange;
+      padding: 20px;
+    }
+
+  }
+
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  .carousel-control-next{
+    left: 5%;
+  }
+
+}
+
+
+#whyus {
+  color: white;
+
+  .box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    background: orange;
+    color: white;
+    padding: 25px;
+
+    .img-box {
+      width: 105px;
+      height: 105px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      // border: 10px solid #eae9eb;
+      border-radius: 100%;
+      transition: all 0.3s;
+
+      img {
+        width: 55px;
+      }
+    }
+
+    .detail-box {
+      margin-top: 20px;
+
+      h4 {
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    &.active,
+    &:hover {
+      .img-box {
+        transform: scale(1.2);
+      }
+    }
+  }
+  
+}

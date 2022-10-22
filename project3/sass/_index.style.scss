@@ -1,0 +1,426 @@
+#hero {
+    width: $max;
+    min-height: 100vh;
+    background-image: url("../public/img/finalps1.jpg");
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    // flex: 1;
+    // border: 1px solid white;
+
+    .hero-text {
+        color: $color1;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        
+
+        .hero-title {
+            font-size: 50px;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .hero-description {
+            color: rgb(226, 216, 216);
+            font-weight: normal;
+            margin: 2% 0;
+            width: 50%;
+            font-size: large;
+
+            span {
+                color: $color1;
+            }
+        }
+
+        .hero-button {
+            border: 3px solid $color1;
+            background-color: $clear;
+            color: white;
+            text-decoration: none;
+            padding: $p-1 3%;
+            box-shadow: 0 0 8px $color1;
+        }
+
+        .hero-button:hover{
+            color: white;
+            transform: scale(1.1);
+        }
+    }
+}
+
+#cross-slanted {
+    width: 100.1vw;
+    height: 80px;
+    position: absolute;
+    bottom: 2%;
+    // left: 0;
+    transform: rotate(7deg);
+    transform-origin: top left;
+}    
+
+.cross {
+    height: 80px;
+}
+
+#infographics {
+    margin-top: 40px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 50px;
+    }
+
+    h1.steps {
+        position: absolute;
+        left: 5%;
+        text-align: left;
+    }
+    h1.shadow::after {
+        margin-top: 20px; /* distance goes here */
+        display: block;
+        content: ' ';
+        height: 2px;
+        background: $color1;
+        box-shadow: 0 0 8px 0px $color1;
+    }
+
+    p{
+        color: 131315;
+        font-size: 210px;
+        font-weight: 900;
+        font-family: helvetica;     
+        text-align: center;
+        opacity: 20%;      
+        margin-top:  -100px;
+    }
+    .auto{
+        margin-top: -20px;
+    }
+    svg.svg1{
+        position: absolute;
+        bottom: 60px;
+        left: 5%; 
+        height: 250px;
+        text-shadow: 0 0 15px   $color1;
+        font-size: x-large;
+        font-family: 'EB Garamond', serif;
+    }
+    svg.svg2{
+        position: absolute;
+        bottom: 220px;
+        left: 29%; 
+        height: 250px;
+        text-shadow: 0 0 8px $color1;
+        font-size: x-large;
+        font-family: 'EB Garamond', serif;
+        
+    }
+    svg.svg3{
+        position: absolute;
+        bottom: 60px;
+        left: 52%; 
+        height: 250px;
+        text-shadow: 0 0 8px $color1;
+        font-size: x-large;
+        font-family: 'EB Garamond', serif;
+    }
+    svg.svg4{
+        position: absolute;
+        bottom: 220px;
+        left: 75%; 
+        height: 250px;
+        text-shadow: 0 0 8px $color1;
+        font-size: x-large;
+        font-family: 'EB Garamond', serif;
+    }
+    
+
+    h5.num3 {
+        position: absolute;
+        bottom: 70px;
+        left: 730px;
+        color: rgb(231, 231, 231);
+        font-family: Helvetica;
+        font-size: x-large;
+        text-align: center;
+        
+    }
+    h5.num4 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 220px;
+        left: 1020px;
+        color: rgb(231, 231, 231);
+        font-family: Helvetica;
+        font-size: x-large;
+        text-align: center;
+    }
+    h1 {
+        color: #fffffffa;
+        font-size: 33px;
+        margin-left: 17px;
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+        
+        
+    }
+}
+
+
+#brands {
+    display: flex;
+    justify-content: space-evenly;
+    padding: $p-2;
+    margin-bottom: 50px;
+    img {
+        height: 50px
+    }
+}
+
+#reviews {
+    color:rgb(226, 216, 216);
+    background-color: #0B1218;
+    
+
+    h1 {
+        position: absolute;
+        left: 5%;
+        text-align: left;
+        font-family: 'EB Garamond', serif;
+    }
+    h1.shadow::after {
+        margin-top: 20px; /* distance goes here */
+        display: block;
+        content: ' ';
+        height: 2px;
+        background: $color1;
+        box-shadow: 0 0 8px 0px $color1;
+    }
+    .carousel-indicators {
+        bottom: -15px;
+        
+
+        button {
+            margin-bottom: 15px;
+            width: 50px;
+            height: 5px;
+           border-radius: 11px;
+        }
+
+        .active {
+            background-color: $color1;
+        
+            filter: drop-shadow(0px 0px 10px  $color1);
+
+            // box-shadow: 0 0 8px 0px $color1;
+           
+        }
+    }
+
+    .cross {
+        width: $max;
+        height: 40px;
+    }
+
+    .review {
+        padding: $p-3;
+        margin: $p-2 0;
+        border: 1px solid $color1;
+        border-radius: 15px;
+        text-align: center;
+
+        img{
+            width: 100px;
+            border-radius: 100%;
+        }
+
+        .reviewer {
+            color: rgb(22, 240, 247);
+            font-weight: bold;
+            margin: 15px 0 30px 0;
+        }
+
+        .review-text {
+            text-align: justify;
+            font-family: helvetica;
+        }
+
+    }
+
+    
+}
+
+#features {
+    color:rgb(226, 216, 216);
+
+    h1 {
+        position: absolute;
+        left: 30%;
+        text-align: center;
+        font-family: 'EB Garamond', serif;
+    }
+    h1.shadow::after {
+        margin-top: 20px; /* distance goes here */
+        display: block;
+        content: ' ';
+        height: 2px;
+        background: $color1;
+        box-shadow: 0 0 8px 0px $color1;
+    }
+
+    .feature-container {
+    
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .feature-1,
+    .feature-2 {
+        width:400px;
+        margin: 30px;
+        padding: $p-3;
+        align-self: center;
+        box-shadow: 0 0 15px 2px rgb(23, 229, 225);
+        border-radius: 15px;
+        background-color: #0009; background-blend-mode: darken;
+        // background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        // position: relative;
+
+        .feature-title {
+            color: rgb(22, 240, 247);
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .feature-description {
+            color:rgb(226, 216, 216);
+            margin: 20px 0 35px 0;
+        }
+
+        .button-div {
+            text-align: center;
+            .feature-button {
+                padding: $p-3;
+                background-color: $color1;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                border-radius: 10px;
+            }
+            .feature-button:hover{
+                transform: scale(1.1);    
+            }
+            
+        }
+    }
+
+
+
+
+    .feature-1 {
+        background-image: url("../public/img/porsche-1851246_960_720.jpg");
+    }
+
+    .feature-2 {
+        background-image: url("../public/img/mustang.jpg");
+    }  
+}
+
+
+@media (min-width: 640px) {
+    #features {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #hero {
+        background-image: url("../public/img/finalps.jpg");
+        background-color: #0009; background-blend-mode: darken;
+    }
+    #cross-slanted{
+        width: 100vw;
+        height: 50px;
+        position: absolute;
+        bottom: -12%;
+        // left: 0;
+        transform: rotate(0deg);
+        transform-origin: top left;
+    
+    }
+
+    #infographics{
+        h1.steps {
+            position: absolute;
+            left: 5%;
+            text-align: left;
+            font-size: large;
+        }
+        h1.shadow {
+            margin-top: 20px;
+            max-width: 250px;
+        }
+        p{
+            font-size: 20vh;
+        }
+        svg.svg1{
+            height: 18vh;
+            position: absolute;
+            bottom: 60px;   
+            left: 5%; 
+            color: white;  
+        }
+        svg.svg2{
+            height: 18vh;
+            position: absolute;
+            bottom: 60px;   
+            left: 28%; 
+            color: white;  
+        }
+        svg.svg3{
+            height: 18vh;
+            position: absolute;
+            bottom: 60px;   
+            left: 51%; 
+            color: white;  
+        }
+        svg.svg4{
+            height: 18vh;
+            position: absolute;
+            bottom: 60px;   
+            left: 74%; 
+            color: white;  
+        }
+    }
+}
+
+    #reviews{
+
+        h1 {
+            position: absolute;
+            left: 12%;
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+        }
+    }
+    #features{
+    .shadow{
+            position: absolute;
+            left: 10%;
+            text-align: center;
+            font-family: 'EB Garamond', serif;
+    }
+    .feature-container {
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    }
