@@ -39,33 +39,72 @@
                 <a class="nav-link" href="./views/reservation.php">Reservation</a>
                 <a class="nav-link" href="./views/about.php">About</a>
                 <a class="nav-link" href="./views/testimonial.php">Testimonial</a>
-                <a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
+                <a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#login_modal">Login</a>
             </div>
         </div>
     </div>
 </nav>
 
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!-- Login Modal -->
+<div class="modal fade" id="login_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header text-center">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">USER LOGIN</h1>
-
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header border-0">
+        <h1 class="modal-title fs-5 text-center w-100" id="login_modalLabel">USER LOGIN</h1>
+        <button type="button" class="btn-close border border-dark" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
+            <div>
+                <!-- <label class="form-label" for="login_username">User Name:</label> -->
+                <input id="login_username" type="text"  class="form-control" name="lastname" placeholder="User Name"/>
+                
+                <!-- <label class="form-label" for="login_password">User Name:</label> -->
+                <input id="login_password" type="text"  class="form-control my-4" name="lastname" placeholder="Password"/>
+
+
+                <button type="button" class="btn btn-primary w-100">Log in</button>
+            </div>
+        </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+        <div class="w-100">
+            New to this site?
+            <a class="ms-2 text-decoration-none text-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupmodal">Sign Up</a>
+        </div>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
       </div>
     </div>
   </div>
 </div>
 <!-- end od modal -->
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h1 class="modal-title fs-5 text-center w-100" id="signupmodalLabel">SIGN UP</h1>
+        <button type="button" class="btn-close border border-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            <div>
+                <!-- <label class="form-label" for="login_username">User Name:</label> -->
+                <input id="login_username" type="text"  class="form-control" name="lastname" placeholder="User Name"/>
+                
+                <!-- <label class="form-label" for="login_password">User Name:</label> -->
+                <input id="login_password" type="text"  class="form-control my-4" name="lastname" placeholder="Password"/>
+
+
+                <button type="button" class="btn btn-primary w-100">Continue</button>
+            </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End -->
 
 
 
