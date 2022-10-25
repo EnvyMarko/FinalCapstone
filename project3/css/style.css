@@ -16,6 +16,7 @@
 #hero .hero-text .hero-title {
   font-size: 50px;
   font-family: "EB Garamond", serif;
+  text-shadow: 2px 2px 2px black;
 }
 #hero .hero-text .hero-description {
   color: rgb(226, 216, 216);
@@ -26,6 +27,7 @@
 }
 #hero .hero-text .hero-description span {
   color: rgb(254, 210, 103);
+  text-shadow: 2px 2px 2px black;
 }
 #hero .hero-text .hero-button {
   border: 3px solid rgb(254, 210, 103);
@@ -367,6 +369,45 @@
   justify-content: center;
 }
 
+#hero-search {
+  background-image: url("../public/img/parking.jpg");
+  width: 99vw;
+  min-height: 100vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+#hero-search h1 {
+  margin-left: 120px;
+  color: rgb(254, 210, 103);
+  font-family: "EB Garamond", serif;
+  text-shadow: 2px 2px 2px black;
+}
+#hero-search .form-feature {
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(254, 210, 103);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+}
+#hero-search form {
+  border-color: aqua;
+  color: rgb(16, 15, 15);
+}
+#hero-search button {
+  background-color: rgb(254, 210, 103);
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+#hero-search button:hover {
+  color: rgb(254, 210, 103);
+  background-color: transparent;
+  border: 1px solid rgb(254, 210, 103);
+  box-shadow: 0 0 8px rgb(254, 210, 103);
+}
+
 #rent {
   display: flex;
   flex-direction: column;
@@ -379,6 +420,18 @@
 }
 #rent .heading_container {
   color: white;
+}
+#rent h2 {
+  font-family: "EB Garamond", serif;
+  font-family: "EB Garamond", serif;
+}
+#rent h2.shadow::after {
+  margin-top: 20px; /* distance goes here */
+  display: block;
+  content: " ";
+  height: 2px;
+  background: rgb(254, 210, 103);
+  box-shadow: 0 0 8px 0px rgb(254, 210, 103);
 }
 #rent .rent-row-1,
 #rent .rent-row-2 {
@@ -396,12 +449,30 @@
   padding: 1%;
   flex-basis: 50%;
   border: 1px solid rgb(254, 210, 103);
+  box-shadow: 0 0 8px rgb(254, 210, 103);
   border-radius: 7px;
+}
+#rent .rent-row-1 .rent-choice .btn,
+#rent .rent-row-2 .rent-choice .btn {
+  background-color: rgb(254, 210, 103);
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+#rent .rent-row-1 .rent-choice .btn:hover,
+#rent .rent-row-2 .rent-choice .btn:hover {
+  color: rgb(254, 210, 103);
+  background-color: transparent;
+  border: 1px solid rgb(254, 210, 103);
+  box-shadow: 0 0 8px rgb(254, 210, 103);
 }
 #rent .rent-row-1 .rent-choice img,
 #rent .rent-row-2 .rent-choice img {
   width: 100%;
   height: auto;
+}
+#rent .rent-row-1 .rent-choice:hover,
+#rent .rent-row-2 .rent-choice:hover {
+  transform: scale(1.1);
 }
 #rent .rent-row-1 .filler,
 #rent .rent-row-2 .filler {
@@ -452,6 +523,8 @@
 }
 .pricingCsection .heading_container {
   color: white;
+  font-family: "EB Garamond", serif;
+  margin-top: 10px;
 }
 .pricingCsection .box {
   background: white;
@@ -461,6 +534,7 @@
   margin-top: 75px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .pricingCsection .box * {
   position: relative;
@@ -473,23 +547,39 @@
   left: 50%;
   width: 400px;
   height: 400px;
-  background: orange;
+  background: rgb(16, 15, 15);
   border-radius: 100%;
   transform: translate(-50%, -50%);
+  border: 4px solid rgb(254, 210, 103);
+  box-shadow: 0 0 10px 2px rgb(254, 210, 103);
 }
 .pricingCsection .box .price {
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: rgb(254, 210, 103);
   margin-bottom: 65px;
+  text-shadow: 0 0 8px rgb(254, 210, 103);
 }
 .pricingCsection .box a {
-  color: darkorange;
+  color: rgb(16, 15, 15);
+  font-weight: 900;
 }
 .pricingCsection .box.boxcenter {
   margin-top: 45px;
 }
 
+@media (max-width: 768px) {
+  #hero-search {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+  }
+  #hero-search h1 {
+    margin-left: 0px;
+    color: rgb(254, 210, 103);
+    font-family: "EB Garamond", serif;
+    text-shadow: 2px 2px 2px black;
+  }
+}
 #about {
   color: white;
 }
@@ -578,7 +668,7 @@
 .client_section .box .client_id .img-box img {
   width: 100%;
   border-radius: 100%;
-  border: 5px solid orange;
+  border: 5px solid rgb(254, 210, 103);
 }
 .client_section .box .client_id .name {
   margin-left: 15px;
@@ -601,7 +691,7 @@
 .client_section .carousel-control-prev .carousel-control-next-icon,
 .client_section .carousel-control-next .carousel-control-prev-icon,
 .client_section .carousel-control-next .carousel-control-next-icon {
-  background-color: orange;
+  background-color: rgb(254, 210, 103);
   padding: 20px;
 }
 .client_section .carousel-control-prev {
@@ -619,7 +709,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 45px;
-  background: orange;
+  background: rgb(254, 210, 103);
   color: white;
   padding: 25px;
 }

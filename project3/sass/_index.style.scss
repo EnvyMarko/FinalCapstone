@@ -19,6 +19,7 @@
         .hero-title {
             font-size: 50px;
             font-family: 'EB Garamond', serif;
+            text-shadow: 2px 2px 2px black;
         }
 
         .hero-description {
@@ -30,6 +31,7 @@
 
             span {
                 color: $color1;
+            text-shadow:    2px 2px 2px black;
             }
         }
 

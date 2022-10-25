@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" aria-current="page" href="./index.php">Home</a>
-                <a class="nav-link" href="./views/reservation.php">Reservation</a>
+                <a class="nav-link" href="./views/reservation.php">Park</a>
                 <a class="nav-link" href="./views/about.php">About</a>
                 <a class="nav-link" href="./views/testimonial.php">Testimonial</a>
                 <a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#login_modal">Login</a>
@@ -69,7 +69,8 @@
       <div class="modal-footer">
         <div class="w-100">
             New to this site?
-            <a class="ms-2 text-decoration-none text-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupmodal">Sign Up</a>
+            <!-- <a class="ms-2 text-decoration-none text-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupmodal">Sign Up</a> -->
+            <a class="ms-2 text-decoration-none text-primary" href="./views/signUp.php">Sign Up</a>
         </div>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
       </div>
@@ -105,6 +106,7 @@
   </div>
 </div>
 <!-- End -->
+
 
 
 
