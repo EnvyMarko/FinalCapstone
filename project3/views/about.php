@@ -27,14 +27,14 @@
 
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../index.php"><img class="mx-3" src="../public/img/logo.jpg"><span>Park</span> Waze</a>
+        <a class="navbar-brand" href="../index.php"><img class="mx-3 flip-y" src="../public/img/logo.png"><span>Park</span> Waze</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
                 <a class="nav-link" aria-current="page" href="../index.php">Home</a>
-                <a class="nav-link" href="./reservation.php">Reservation</a>
+                <a class="nav-link" href="./reservation.php">Park</a>
                 <a class="nav-link" href="./about.php">About</a>
                 <a class="nav-link" href="./testimonial.php">Testimonial</a>
                 <a class="nav-link">Log in</a>

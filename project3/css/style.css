@@ -709,6 +709,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 45px;
+  background: rgb(16, 15, 15);
   background: rgb(254, 210, 103);
   color: white;
   padding: 25px;
@@ -740,6 +741,31 @@
   transform: scale(1.2);
 }
 
+.flip-y {
+  -webkit-animation: flip-y 3s linear infinite both;
+  animation: flip-y 3s linear infinite both;
+}
+
+@-webkit-keyframes flip-y {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+@keyframes flip-y {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
 ::-webkit-scrollbar {
   width: 8px;
 }

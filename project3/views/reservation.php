@@ -31,7 +31,7 @@
 
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="./index.php"><img class="mx-3" src="../public/img/logo.png"><span>Park</span> Waze</a>
+        <a class="navbar-brand" href="./index.php"><img class="mx-3 flip-y" src="../public/img/logo.png"><span>Park</span> Waze</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,7 +40,7 @@
                 <a class="nav-link" aria-current="page" href="../index.php">Home</a>
                 <a class="nav-link" href="../views/reservation.php">Park</a>
                 <a class="nav-link" href="../views/about.php">About</a>
-                <a class="nav-link" href="./views/testimonial.php">Testimonial</a>
+                <a class="nav-link" href="../views/testimonial.php">Testimonial</a>
                 <a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#login_modal">Login</a>
             </div>
         </div>
@@ -195,7 +195,7 @@
     <div class="container">
         <div class="heading_container">
             <h2>
-                Prioprietorship Plans
+                Proprietorship Plans
             </h2>
         </div>
         <div class="col-xl-10 px-0 mx-auto">
